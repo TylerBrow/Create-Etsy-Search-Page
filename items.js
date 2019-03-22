@@ -1,6 +1,4 @@
-var items = {
-  "count":50100,
-  "results":[
+var items = [
     {
       "listing_id":546654944,
       "state":"active",
@@ -5368,34 +5366,4 @@ var items = {
         "is_calculated_eligible":true
       }
     }
-  ],
-  "params":{
-    "limit":25,
-    "offset":0,
-    "page":null,
-    "keywords":"whiskey",
-    "sort_on":"created",
-    "sort_order":"down",
-    "min_price":null,
-    "max_price":null,
-    "color":null,
-    "color_accuracy":0,
-    "tags":null,
-    "category":null,
-    "location":null,
-    "lat":null,
-    "lon":null,
-    "region":null,
-    "geo_level":"city",
-    "accepts_gift_cards":"false",
-    "translate_keywords":"false"
-  },
-  "type":"Listing",
-  "pagination":{
-    "effective_limit":25,
-    "effective_offset":0,
-    "next_offset":25,
-    "effective_page":1,
-    "next_page":2
-  }
-}
+  ]

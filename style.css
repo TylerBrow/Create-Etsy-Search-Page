@@ -20,6 +20,9 @@ div {
 #searchbar {
     width: 45%;
 }
+#signin {
+    width: 40%
+}
 #header ul {
     width: 400px;
     display: flex;
@@ -49,10 +52,25 @@ div {
     border: 13px solid orange;
     border-radius: 8px;
 }
+#bottomcontainer {
+    display: flex;
+}
 #sidebar {
-    width: 400px;
     border: 1px solid black;
 }
+.sidebar {
+    margin: 13px;
+    border-bottom: 1px solid black;
+}
+#aboveitems {
+    position: relative;
+}
 #itemcontainer {
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.items {
+    width: 200px;
+    margin: 20px;
 }
