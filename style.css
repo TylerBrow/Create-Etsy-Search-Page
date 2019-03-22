@@ -50,7 +50,8 @@ div {
     border-radius: 8px;
 }
 #sidebar {
-
+    width: 400px;
+    border: 1px solid black;
 }
 #itemcontainer {
 
