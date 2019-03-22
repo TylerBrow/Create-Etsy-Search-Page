@@ -1,0 +1,57 @@
+Html {
+    box-sizing: border-box;
+}
+
+*,* ::after, *::before {
+    box-sizing: inherit;
+}
+div {
+ 
+}
+#container {
+    margin: 30px;
+}
+#header {
+    display: flex;
+}
+#etsylogo {
+    width: 15%;
+}
+#searchbar {
+    width: 45%;
+}
+#header ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#signin {
+    display: flex;
+}
+#nav {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#filter {
+    
+}
+#filter ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 100px;
+    list-style: none;
+}
+#filter li {
+    background-color: orange;
+    border: 13px solid orange;
+    border-radius: 8px;
+}
+#sidebar {
+
+}
+#itemcontainer {
+
+}
