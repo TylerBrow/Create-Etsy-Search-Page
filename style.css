@@ -57,10 +57,16 @@ div {
 }
 #sidebar {
     border: 1px solid black;
+    min-width: 250px;
+    height: 1490px;
 }
 .sidebar {
     margin: 13px;
     border-bottom: 1px solid black;
+}
+.sidebar * {
+    display: flex;
+    flex-direction: column;
 }
 #aboveitems {
     position: relative;
@@ -73,4 +79,9 @@ div {
 .items {
     width: 200px;
     margin: 20px;
+}
+img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
 }
