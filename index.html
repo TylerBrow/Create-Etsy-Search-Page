@@ -4,17 +4,18 @@
 
     <head>
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
 
     <body>
       <div id="container">
         <div id="header">
             <div id="etsylogo">
-                <h2>Etsy</h2>
+                <p>Etsy</p>
             </div>
             <div id="searchbar">
                 <label for="search">
-                  <input type="text" id="search" placeholder="search">
+                  <input type="text" id="search" placeholder="search"><button>Search</button>
                 </label>
             </div>
             <div id="signin">
@@ -24,19 +25,21 @@
                     <li>Sign in</li>
                     <li>Discover</li>
                     <li>Cart</li>
+                    <li><i class="fas fa-search fa-2x"></i></li>
+                    <li><img src="./assets/cart.png" id="cart"></li>
                 </ul>
             </div>
         </div>
         <div id="nav">
-            <p>Jewelry & Accessories</p>
-            <p>Clothing & Shoes</p>
-            <p>Home & Living</p>
-            <p>Wedding & Party</p>
-            <p>Toys & Entertainment</p>
-            <p>Art & Collectibles</p>
-            <p>Craft Supplies</p>
-            <p>Vintage</p>
-            <p>Gifts</p>
+            <a href=""><p>Jewelry & Accessories</p></a>
+            <a href=""><p>Clothing & Shoes</p></a>
+            <a href=""><p>Home & Living</p></a>
+            <a href=""><p>Wedding & Party</p></a>
+            <a href=""><p>Toys & Entertainment</p></a>
+            <a href=""><p>Art & Collectibles</p></a>
+            <a href=""><p>Craft Supplies</p></a>
+            <a href=""><p>Vintage</p></a>
+            <a href=""><p>Gifts</p></a>
         </div>
         <div id="filter">
             <ul>
@@ -67,122 +70,106 @@
                         <li>Clothing</li>
                         <li>Weddings</li>
                     </ul>
-                    <button>+ Show more</button>
+                    <button id="show">+ Show more</button>
                 </div>
                 <div id="shipping" class="sidebar">
                     <h3>Shipping</h3>
-                    <input type="checkbox" id="freeship">
-                    <label for="freeship">Free shipping</label>
-                    <input type="checkbox" id="1day">
-                    <label for="1day">Ready to ship in 1 business day</label>
-                    <input type="checkbox" id="3day">
-                    <label for="3day">Ready to ship within 3 business days</label>
+                    <ul>
+                        <li><input type="checkbox">Free Shipping</li>
+                        <li><input type="checkbox">Ready to ship in 1 business day</li>
+                        <li><input type="checkbox">Ready to ship within 3 business days</li>
+                    </ul>
                 </div>
                 <div id="materials" class="sidebar">
                     <h3>Materials</h3>
                     <ul>
-                    <li><input type="checkbox">Ceramic</li>
-                    <li><input type="checkbox">Cork</li>
-                    <li><input type="checkbox">Fabric</li>
-                    <li><input type="checkbox">Glass</li>
-                    <li><input type="checkbox">Metal</li>
-                    <li><input type="checkbox"></li>
+                        <li><input type="checkbox">Ceramic</li>
+                        <li><input type="checkbox">Cork</li>
+                        <li><input type="checkbox">Fabric</li>
+                        <li><input type="checkbox">Glass</li>
+                        <li><input type="checkbox">Metal</li>
                     </ul>
-                    <button>+ Show more</button>
+                    <button id="show">+ Show more</button>
                 </div>
                 <div id="color" class="sidebar">
                     <h3>Color</h3>
-                    <input type="checkbox" id="beige">
-                    <label for="beige">Beige</label>
-                    <input type="checkbox" id="black">
-                    <label for="black">Black</label>
-                    <input type="checkbox" id="blue">
-                    <label for="blue">Blue</label>
-                    <input type="checkbox" id="bronze">
-                    <label for="bronze">Bronze</label>
-                    <input type="checkbox" id="brown">
-                    <label for="brown">Brown</label>
-                    <button>+ Show more</button>
+                    <ul>
+                        <li><input type="checkbox">Beige</li>
+                        <li><input type="checkbox">Black</li>
+                        <li><input type="checkbox">Blue</li>
+                        <li><input type="checkbox">Bronze</li>
+                        <li><input type="checkbox">Brown</li>
+                    </ul>
+                    <button id="show">+ Show more</button>
                 </div>
                 <div id="personalized" class="sidebar">
                     <h3>Can be personalized</h3>
-                    <input type="checkbox" id="yes">
-                    <label for="yes">Yes</label>
-                    <input type="checkbox" id="no">
-                    <label for="no">No</label>
+                    <ul>
+                         <li><input type="checkbox">Yes</li>
+                         <li><input type="checkbox">No</li>
+                    </ul>
                 </div>
                 <div id="occasion" class="sidebar">
                     <h3>Occasion</h3>
-                    <input type="checkbox" id="anniversary">
-                    <label for="anniversary">Anniversary</label>
-                    <input type="checkbox" id="babyshower">
-                    <label for="babyshower">Baby shower</label>
-                    <input type="checkbox" id="bachelor">
-                    <label for="bachelor">Bachelor party</label>
-                    <input type="checkbox" id="bachelorette">
-                    <label for="bachelorette">Bachelorette part</label>
-                    <input type="checkbox" id="birthday">
-                    <label for="birthday">Birthday</label>
-                    <button>+ Show more</button>
+                    <ul>
+                          <li><input type="checkbox">Anniversary</li>
+                          <li><input type="checkbox">Baby Shower</li>
+                          <li><input type="checkbox">Bachelor Party</li>
+                          <li><input type="checkbox">Bachelorette Part</li>
+                          <li><input type="checkbox">Birthday</li>
+                    </ul>
+                    <button id="show">+ Show more</button>
                 </div>
                 <div id="holiday" class="sidebar">
                     <h3>Holiday</h3>
-                    <input type="checkbox" id="christmas">
-                    <label for="christmas">Christmas</label>
-                    <input type="checkbox" id="cincodemayo">
-                    <label for="cincodemayo">Cinco de Mayo</label>
-                    <input type="checkbox" id="easter">
-                    <label for="easter">Easter</label>
-                    <input type="checkbox" id="fatherday">
-                    <label for="fatherday">Father's Day</label>
-                    <input type="checkbox" id="halloween">
-                    <label for="halloween">Halloween</label>
-                    <button>+ Show more</button>
+                    <ul>
+                         <li><input type="checkbox">Christmas</li>
+                         <li><input type="checkbox">Cinco de Mayo</li>
+                         <li><input type="checkbox">Easter</li>
+                         <li><input type="checkbox">Father's Day</li>
+                         <li><input type="checkbox">Halloween</li>
+                    </ul>
+                    <button id="show">+ Show more</button>
+                    
                 </div>
                 <div id="location" class="sidebar">
                     <h3>Shop location</h3>
-                    <input type="radio" name="location" id="anywhere">
-                    <label for="anywhere">Anywhere</label>
-                    <input type="radio" name="location" id="unitedstates">
-                    <label for="unitedstates">United States</label>
-                    <input type="radio" name="location" id="custom">
-                    <label for="custom">Custom</label>
+                    <ul>
+                        <li><input type="radio" name="location">Anywhere</li>
+                        <li><input type="radio" name="location">United States</li>
+                        <li><input type="radio" name="location">Custom</li>
+                    </ul>
                     <input type="text" id="customlocation" placeholder="Enter location">
                     <button id="arrowicon">*arrow icon*</button>
                 </div>
                 <div id="itemtype" class="sidebar">
                     <h3>Item type</h3>
-                    <input type="radio" name="itemtype" id="allitems">
-                    <label for="allitems">All items</label>
-                    <input type="radio" name="itemtype" id="handmade">
-                    <label for="handmade">Handmade</label>
-                    <input type="radio" name="itemtype" id="vintage">
-                    <label for="vintage">Vintage</label>
+                    <ul>
+                        <li><input type="radio" name="itemtype">All items</li>
+                        <li><input type="radio" name="itemtype">Handmade</li>
+                        <li><input type="radio" name="itemtype">Vintage</li>
+                    </ul>
                 </div>
                 <div id="sidebarprice" class="sidebar">
                     <h3>Price ($)</h3>
-                    <input type="radio" name="price" id="anyprice">
-                    <label for="anyprice">Any price</label>
-                    <input type="radio" name="price" id="50">
-                    <label for="50">Under $50</label>
-                    <input type="radio" name="price" id="5to10">
-                    <label for="5to10">$50 to $100</label>
-                    <input type="radio" name="price" id="1to15">
-                    <label for="1to15">$100 to $150</label>
-                    <input type="radio" name="price" id="over">
-                    <label for="over">Over $150</label>
-                    <input type="radio" name="price" id="customprice">
-                    <label for="customprice">Custom</label>
+                    <ul>
+                        <li><input type="radio" name="price">Any Price</li>
+                        <li><input type="radio" name="price">Under $50</li>
+                        <li><input type="radio" name="price">$50 to $100</li>
+                        <li><input type="radio" name="price">$100 to $150</li>
+                        <li><input type="radio" name="price">Over $150</li>
+                        <li><input type="radio" name="price">Custom</li>
+                    </ul>
                     <input type="text" id="pricelow" placeholder="Low"><span>to</span>
                     <input type="text" id="pricehigh" placeholder="High">
                     <button>*arrow icon*</button>
                 </div>
                 <div id="orderoptions" class="sidebar">
                     <h3>Ordering options</h3>
-                    <input type="checkbox" id="giftcards">
-                    <label for="giftcards">Accepts Etsy gift cards</label>
-                    <input type="checkbox" id="giftwrap">
-                    <label for="giftwrap">Can be gift-wrapped</label>
+                    <ul>
+                        <li><input type="checkbox">Accepts Etsy gift cards</li>
+                        <li><input type="checkbox">Can be gift-wrapped</li>
+                    </ul>
                 </div>
                 <div id="shipto" class="sidebar">
                     <h3>Ship to</h3>
@@ -197,11 +184,12 @@
         <div id="bottomright">
                 <div id="aboveitems">
                         <span>All categories "whiskey"(68,535 Results)</span>
-                        <span>Sort by:</span><button>Relevancy</button>
+                        <span>Sort by:<button>Relevancy</button></span>
                     </div>
             <div id="itemcontainer">
                 <div class="items">
                     <img id="image" src="">
+                    <img id="heart" src="./assets/heart.png">
                     <p class="name"></p>
                     <p class="whomade"></p>
                     <p class="price"></p>
